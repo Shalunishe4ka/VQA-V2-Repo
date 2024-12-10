@@ -1,0 +1,8 @@
+torch
+torchvision
+torchtext
+transformers
+rouge-score
+nltk
+tqdm
+requests
