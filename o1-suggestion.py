@@ -61,7 +61,8 @@ pad_token_idx = 1       # Для BART pad_token_id обычно равен 1
 # device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-
+if not os.path.exists(checkpoint_dir):
+    os.makedirs(checkpoint_dir)
 
 def download_and_extract_dataset(dataset_dir, urls):
     """
