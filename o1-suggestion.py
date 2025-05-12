@@ -64,16 +64,20 @@ def download_and_extract_dataset(dataset_dir, urls):
 
 # Пример ссылок (при необходимости скачать датасет)
 urls = [
-    "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Train_mscoco.zip",
-    "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip",
-    "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Questions_Train_mscoco.zip",
-    "https://s3.amazonaws.com/cvmlp/vqa/mscoco/vqa/v2_Questions_Val_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Annotations_Train_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Annotations_Val_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Questions_Train_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Questions_Val_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Questions_Test_mscoco.zip",
     "http://images.cocodataset.org/zips/train2014.zip",
     "http://images.cocodataset.org/zips/val2014.zip",
+    "http://images.cocodataset.org/zips/test2015.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Complementary_Pairs_Train_mscoco.zip",
+    "https://cvmlp.s3.amazonaws.com/vqa/mscoco/vqa/v2_Complementary_Pairs_Val_mscoco.zip"
 ]
 
 # Если датасет ещё не скачан, раскомментируйте:
-# download_and_extract_dataset(dataset_dir, urls)
+download_and_extract_dataset(dataset_dir, urls)
 
 # Загрузка аннотаций и вопросов
 def load_json(file_path):
