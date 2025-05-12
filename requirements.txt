@@ -7,3 +7,4 @@ nltk
 tqdm
 requests
 datasets
+pycocoevalcap
