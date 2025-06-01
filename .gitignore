@@ -1,2 +1,5 @@
 venv
 Dataset
+Checkpoints
+__pycache__
+*.pyc
